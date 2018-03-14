@@ -49,61 +49,108 @@ body > header.nav-bar li {
   position: relative;
 }
 
-body>header.nav-bar a {
+body > header.nav-bar a {
   display: block;
-height: 44px;
-line-height: 2.5em;
-padding: 0.65em 1em;
-text-align: right;
-font-size: 12px;
-color: #fff;
-font-weight: 400;
-text-transform: uppercase;
-text-decoration: none;
+  height: 44px;
+  line-height: 2.5em;
+  padding: 0.65em 1em;
+  text-align: right;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding-bottom: 0;
+line-height: 3.85em;
+padding-top: 0;
 }
-body>header.nav-bar .logo a {
+body > header.nav-bar .logo a {
   overflow: hidden;
 }
 
-body>header.nav-bar .logo img {
+body > header.nav-bar .logo img {
   height: 4.15em;
-width: 4.15em;
-margin: -1.15em 0 0;
-opacity: .95;
-float: left;
-display: block
+  width: 4.15em;
+  margin: -1.15em 0 0;
+  opacity: .95;
+  float: left;
+  display: block;
+  margin-top: -.5em;
 }
 
 ul#user_navbar.nav.navbar-nav {
-  padding-left: 0
+  padding-left: 0;
 }
 
-body>header.nav-bar .logo span {
+body > header.nav-bar .logo span {
   display: block;
-height: 100%;
-float: left;
-margin: 0 .5em;
+  height: 100%;
+  float: left;
+  margin: 0 .5em;
 }
 
-
+body > header.nav-bar a.active,
+body > header.nav-bar a:active,
+.chatBubble.splitQuestion:not(.answered) .bubbleContent .bubbleBtn:hover,
+.ekButton:hover {
+  background: #2c2c2c;
+  box-shadow: 0 -1px 0 0 #2c2c2c inset,
+    0em -1em 4em -1em rgba(31, 172, 237, 0.45) inset;
+  transform: none;
+  color: #fff;
+  text-decoration: none;
+}
 
 .container {
   width: 100%;
 }
 .container .row {
   padding: 40px 30px;
-  max-width: 720px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .container h1 {
   font-weight: 300;
-text-transform: uppercase;
-text-align: center;
-font-family: Lato, sans-serif;
-font-size: 36px;
-margin-top: 20px;
-margin-bottom: 10px;
-line-height: 1.1;
-color: inherit
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.container .content {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 1.3em;
+letter-spacing: 0.015em;
+line-height: 1.65em;
+}
+
+.container .content blockquote {
+  font-style: italic;
+color: #aeaeae;
+font-size: 1.15em;
+}
+.container .content h3 {
+  font-size: 1.5em;
+}
+.container .content figure {
+  max-width: 100%;
+  margin: 20px 0;
+  padding : 5px;
+}
+.container .content figure img {
+max-width: 100%;
+}
+.container .content hr {
+  max-width: 40px;
+border: 3px solid #999;
+}
+
+.container .content a, .container .content a:visited {
+  color: #1faced
 }

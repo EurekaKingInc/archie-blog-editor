@@ -5,15 +5,23 @@ import { BrowserRouter } from "react-router-dom"
 
 import { Sugar } from "@roast-cms/react-sugar-styled"
 
+import { FrenchPress, Wrapper, Picture } from "@roast-cms/french-press-editor"
+
 //
 // render everything!
 render(
   <div>
     <ThemeProvider theme={Sugar}>
       <BrowserRouter>
-        <div>
-          hello
-        </div>
+        <Wrapper>
+          <FrenchPress
+            editorRef={ref => {}}
+            components={{Picture}}
+            options={{
+              imageMaxSize: 10
+            }}
+          />
+        </Wrapper>
       </BrowserRouter>
     </ThemeProvider>
   </div>,

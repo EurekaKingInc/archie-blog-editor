@@ -25,10 +25,23 @@
     "prepare": "babel src --out-dir dist"
   },
   "dependencies": {
+    "@roast-cms/french-press-editor": "^0.3.0",
+    "@roast-cms/react-button-beans": "^0.1.2",
+    "@roast-cms/react-link-filter": "^0.1.2",
     "@roast-cms/react-sugar-styled": "^0.1.1",
+    "@roast-cms/slate-drop-or-paste-images": "^0.8.1",
+    "immutable": "^3.8.2",
+    "localforage": "^1.6.0",
+    "localforage-getitems": "^1.4.1",
+    "lodash": "^4.17.5",
+    "positions": "^1.6.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
+    "slate": "^0.33.0",
+    "slate-auto-replace": "^0.9.0",
+    "slate-html-serializer": "^0.5.6",
+    "slate-react": "^0.12.0",
     "styled-components": "3.0.2"
   }
 }
