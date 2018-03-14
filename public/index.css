@@ -129,14 +129,23 @@ font-size: 1.3em;
 letter-spacing: 0.015em;
 line-height: 1.65em;
 }
-
+.container .content p {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 1em;
+letter-spacing: 0.015em;
+line-height: 1.65em;
+}
 .container .content blockquote {
   font-style: italic;
 color: #aeaeae;
 font-size: 1.15em;
 }
 .container .content h3 {
-  font-size: 1.5em;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 1.5em;
+letter-spacing: 0.015em;
+line-height: 1.65em;
+font-weight: 700;
 }
 .container .content figure {
   max-width: 100%;
