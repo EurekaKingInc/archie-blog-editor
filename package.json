@@ -1,0 +1,34 @@
+{
+  "name": "archie-blog-editor",
+  "version": "0.0.1",
+  "description": "A front-end editor tool used to compose new posts for Archie blog.",
+  "main": "dist/index.js",
+  "repository": "https://github.com/EurekaKingInc/archie-blog-editor.git",
+  "author": "dmitrizzle <d@analog.cafe>",
+  "private": true,
+  "devDependencies": {
+    "babel-cli": "^6.0.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-dynamic-import-webpack": "^1.0.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "peerDependencies": {},
+  "scripts": {
+    "start": "webpack-dev-server",
+    "prepare": "babel src --out-dir dist"
+  },
+  "dependencies": {
+    "@roast-cms/react-sugar-styled": "^0.1.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router-dom": "^4.2.2",
+    "styled-components": "3.0.2"
+  }
+}
