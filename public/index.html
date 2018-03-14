@@ -9,9 +9,44 @@
     padding: 0;
   }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" media="screen" href="/public/index.css" />
 </head>
 <body>
-  <div id="app"></div>
+  <header class="nav-bar modalBlur">
+    <div class="container-fluid no-paddin-left-right nav-max-width">
+      <nav class="navbar-user">
+        <ul id="user_navbar" class="nav navbar-nav">
+          <li class="logo ">
+              <a href="/#top" class="hashScroll how"><img class="logo-bar" alt="Archie.AI Logo" src="https://www.archie.ai/assets/archie_logo_400_rounded-cropped-4f1940aa05ec8d50c69334c7c646794d66734792b94523a711dbe51d1b13fdeb.png"><span class="nav-bar">Archie</span></a>
+          </li>
+            <li>
+              <a href="/#case-study" class="hashScroll" id="navbarCaseStudyHash" onclick="ga('send', 'event', 'click', 'what', 'Header');">Who is Archie?</a>
+            </li>
+            <li>
+              <a href="/ask-me" onclick="ga('send', 'event', 'click', 'askme', 'Header');" id="ask_archie_navbar" class="">What can Archie Do?</a>
+            </li>
+            <li>
+              <a href="/#pricing" class="hashScroll" id="navbarPricingHash" onclick="ga('send', 'event', 'click', 'pricing', 'Header');">Pricing</a>
+            </li>
+            <li>
+              <a href="https://calendly.com/ishtiaq" rel="nofollow" target="_blank" onclick="ga('send', 'event', 'click', 'requestdemo', 'Header');" id="request_demo_navbar">Request a Demo</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="navbar-right">
+          <li>
+						<a id="login-button" href="/users/sign_in">Sign In</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <h1>Blog Editor</h1>
+      <div id="app"></div>
+    </div>
+  </div>
   <script src="../lib/bundle.js" type="text/javascript"></script>
 </body>
 </html>
