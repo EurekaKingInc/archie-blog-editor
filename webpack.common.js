@@ -1,9 +1,5 @@
 module.exports = {
   entry: "./src/index.js",
-  output: {
-    filename: "bundle.js",
-    publicPath: "/lib/"
-  },
   module: {
     loaders: [
       {
@@ -21,12 +17,5 @@ module.exports = {
       }
     ]
   },
-  resolve: { extensions: ["*", ".js"] },
-  devServer: {
-    port: 3003,
-    historyApiFallback: {
-      index: "public/index.html"
-    }
-  },
-  devtool: "inline-source-map"
+  resolve: { extensions: ["*", ".js"] }
 }
